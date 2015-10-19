@@ -430,10 +430,11 @@ body {
 
 html,
 body {
-  min-height: 100vh; }
+  min-height: 100vh;
+  font-style: italic; }
 
 body {
-  background: lightblue;
+  background: WHITESMOKE;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Fira Sans' sans-serif;
@@ -444,7 +445,8 @@ body {
 .home-wrap header {
   width: 135px;
   background: white;
-  padding: 30px 0; }
+  padding: 30px 0;
+  box-shadow: inset -12px 1px 18px -13px rgba(0, 0, 0, 0.75); }
   .home-wrap header .header-position {
     position: fixed;
     top: 30px;
@@ -478,8 +480,7 @@ body {
     padding: 0 20px 0 0;
     text-align: right; }
     .home-wrap header .site-nav ul li {
-      margin-bottom: 10px;
-      font-style: italic; }
+      margin-bottom: 10px; }
       .home-wrap header .site-nav ul li:hover {
         font-weight: bold;
         border-left: 8px solid; }
@@ -580,6 +581,24 @@ body {
         -ms-transform: translateY(0%);
             transform: translateY(0%); } }
 
+section.about {
+  background-color: rgba(0, 0, 0, 0.3); }
+  section.about h2 {
+    color: #3f3f42;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: -108px;
+    margin-top: 0; }
+  section.about .home-lead {
+    padding-bottom: 180px; }
+
+@media (max-width: 640px) {
+  section.about h2, section.about .home-lead {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px; } }
+
 .home-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -592,7 +611,8 @@ body {
 .home-sections {
   -webkit-flex: 1;
       -ms-flex: 1;
-          flex: 1; }
+          flex: 1;
+  border-left: 1px solid rgba(0, 0, 0, 0.4); }
   .home-sections section {
     padding: 50px 0; }
   .home-sections .flex {
@@ -616,15 +636,14 @@ body {
             order: -1; }
   .home-sections .col-1 {
     max-width: 300px;
-    margin: 0 10px;
-    background: pink; }
+    margin: 0 10px; }
   .home-sections .col-2 {
     max-width: 620px;
-    margin: 0 10px;
-    background: honeydew; }
+    margin: 0 10px; }
   .home-sections .col-50 {
-    width: 50%;
-    background: yellow; }
+    width: 50%; }
+  .home-sections .push-right {
+    margin-left: 330px; }
 
 @media (max-width: 640px) {
   .home-sections .flex {
@@ -632,4 +651,10 @@ body {
   .col-1 {
     max-width: 100%; }
   .col-50 {
-    width: auto; } }
+    width: auto; }
+  .push-right {
+    margin-left: 10px; } }
+
+.home-lead {
+  font-size: 36px;
+  line-height: 1.1; }
