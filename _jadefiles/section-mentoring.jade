@@ -1,0 +1,19 @@
+mixin face
+	li.face(style="background-image: url(http://fillmurray.com/80/80);")
+		.bubble
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			cite - Nathan Jacobs
+
+section.mentoring
+	.flex.flex--space-around
+		.col-1.order-first
+			ul.faces
+				+face
+				+face
+				+face
+				+face
+				+face
+
+		.col-1
+			p.home-lead.outdented Not right now!
+			a(href="#").home-cta Schedule a Call
