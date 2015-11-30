@@ -5,7 +5,13 @@ $(function() {
 function mentoringBubbleClick() {
 	$('.face').on('click', function() {
 		console.log("face clicked!");
-		$(this).addClass('has-bubble-open')
+		var $this = $(this),
+				faceTop = $this.position().top,
+				vertMath = faceTop - 230;
+
+		console.log(vertMath);
+
+		$this.addClass('has-bubble-open')
 			.siblings().removeClass('has-bubble-open');
 	});
 
