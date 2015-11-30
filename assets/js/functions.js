@@ -9,8 +9,6 @@ function mentoringBubbleClick() {
 			.siblings().removeClass('has-bubble-open');
 	});
 
-
-
 	//when I click a face
 	//get the distance of the face from its parent
 	//move the whole container up 115px + the count
