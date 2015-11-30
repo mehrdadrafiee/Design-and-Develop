@@ -7,7 +7,7 @@ function mentoringBubbleClick() {
 		console.log("face clicked!");
 		var $this = $(this),
 				faceTop = $this.position().top,
-				vertMath = faceTop - 230;
+				vertMath = -1 * (faceTop - 230);
 
 		console.log(vertMath);
 

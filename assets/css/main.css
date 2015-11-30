@@ -707,13 +707,12 @@ section.mentoring {
     margin-top: 250px; }
   section.mentoring .faces {
     list-style: none;
-    background: pink;
     margin: -50px 0;
     height: calc(100% + 100px);
     padding: 0;
     position: relative;
-    -webkit-transition: all 0.2s cubic-bezier(0, 0.53, 0.34, 1.5);
-            transition: all 0.2s cubic-bezier(0, 0.53, 0.34, 1.5); }
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
   section.mentoring .face {
     height: 80px;
     width: 80px;
