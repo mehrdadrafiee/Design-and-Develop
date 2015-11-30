@@ -711,9 +711,11 @@ section.mentoring {
     height: calc(100% + 100px);
     padding: 0;
     position: relative;
-    top: 0px;
+    top: 800px;
     -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out; }
+    section.mentoring .faces.launched {
+      top: 0px; }
   section.mentoring .face {
     height: 80px;
     width: 80px;
