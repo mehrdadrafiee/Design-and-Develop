@@ -11,6 +11,8 @@ function mentoringBubbleClick() {
 
 		console.log(vertMath);
 
+		$this.parent().css('top', + vertMath + 'px')
+
 		$this.addClass('has-bubble-open')
 			.siblings().removeClass('has-bubble-open');
 	});

@@ -711,7 +711,9 @@ section.mentoring {
     margin: -50px 0;
     height: calc(100% + 100px);
     padding: 0;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all 0.2s cubic-bezier(0, 0.53, 0.34, 1.5);
+            transition: all 0.2s cubic-bezier(0, 0.53, 0.34, 1.5); }
   section.mentoring .face {
     height: 80px;
     width: 80px;
