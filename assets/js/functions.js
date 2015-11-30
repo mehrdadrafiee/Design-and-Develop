@@ -6,7 +6,7 @@ function mentoringBubbleClick() {
 	$('.face').on('click', function() {
 		console.log("face clicked!");
 		var faceTop = $(this).position().top,
-				verMath = faceTop - 135;
+			verMath = faceTop - 135;
 
 		console.log(verMath);
 
