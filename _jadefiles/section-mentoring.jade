@@ -1,5 +1,5 @@
 mixin face(face, words, name)
-  li.face(style="background-image: url(/assets/img/testimonial-avatars/#{face});")
+  li.face(style="background-image: url(#{face});")
     .bubble
       p #{words}
       cite — #{name}
@@ -8,10 +8,10 @@ section.mentoring#mentoring
   .flex.flex--space-around
     .col-1.order-first
       ul.faces
-        +face("lj.jpg","He provided me with a clear perspective of how I could utilise and manage my time effectively to get most out of my personal projects. But most importantly Travis eased some of the concerns I once had about landing a job in the Web Design industry.","L.J Bennett")
-        +face("gareth.jpg", "Travis talked me through the necessary steps I needed to take to land a Designer/Front End Developer role with a digital agency. We discussed what I needed to have in my portfolio, as well as what I needed to be doing on a daily basis to make my dream a reality.", "Gareth Connop")
-        +face("kim.jpg", "He was very engaging and gave me a lot of great advice/guidance.  I feel more confident about where to go when choosing what to put in my portfolio/what to expect during the job application process.", "Kimberly Simmons")
-        +face("joey.jpg", "As someone re-entering into the Creative Art / Web industry with very minimal support, this call was a big help. It allowed me to gauge my progress, choices, and goals against someone that has already been through this phase.", "Joey Bergeron")
+        +face("https://s3.amazonaws.com/uifaces/faces/twitter/rem/73.jpg","Praesent venenatis pulvinar pulvinar. Praesent tempus risus nisl, sit amet lacinia justo consequat vitae. Nunc leo quam, ultricies id vestibulum quis, maximus ac neque. Donec lacinia ex non sollicitudin feugiat. Sed vel nibh ut magna convallis efficitur.","Miles J. Hickey")
+        +face("https://s3.amazonaws.com/uifaces/faces/twitter/pixeliris/73.jpg", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras odio sem, malesuada eu nulla eget, rhoncus suscipit nunc. Aenean velit nunc, ultricies id lacinia in, maximus ac enim. Praesent venenatis pulvinar pulvinar. Praesent tempus risus nisl, sit amet lacinia justo consequat vitae.", "Carmen M. Lococo")
+        +face("https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/73.jpg", "Sed ullamcorper tellus in felis rutrum pellentesque. Vivamus laoreet nibh at sapien pretium, non mollis ipsum fringilla. Mauris ac neque a mauris elementum blandit. Vestibulum condimentum quam vitae risus facilisis, quis tristique nulla scelerisque.", "Horace E. Quick")
+        +face("https://s3.amazonaws.com/uifaces/faces/twitter/jsa/73.jpg", "Praesent venenatis pulvinar pulvinar. Praesent tempus risus nisl, sit amet lacinia justo consequat vitae. Nunc leo quam, ultricies id vestibulum quis, maximus ac neque. Donec lacinia ex non sollicitudin feugiat. Sed vel nibh ut magna convallis efficitur.", "Theodore Tyler")
         //- +face("andrew.jpg", "Travis provided me with his perspective on potential course objectives and units. Our discussion both reinforced many of my ideas and provided me with unique insights that have further fueled my excitement for the opportunity to teach web development.", "Andrew Wheeler")
         //- +face("mary.jpg", "Travis provides solid career advice for creatives. I felt I was talking to someone who has walked the same path I'm walking. He is a humble, hard working man, and a great example to follow in this industry. That's the kind of person you want to get advice from.", "Mary Rodriguez")
         li.back-btn.face

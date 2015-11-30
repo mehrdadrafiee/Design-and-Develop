@@ -711,6 +711,7 @@ section.mentoring {
     height: calc(100% + 100px);
     padding: 0;
     position: relative;
+    top: 0px;
     -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out; }
   section.mentoring .face {
