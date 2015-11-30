@@ -18,6 +18,7 @@ section.mentoring
 		margin: -50px 0
 		height: calc(100% + 100px)
 		padding: 0
+		position: relative
 
 	.face
 		height: 80px
@@ -29,6 +30,7 @@ section.mentoring
 		margin-bottom: 35px
 		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4)
 		position: relative
+		cursor: pointer
 
 	.bubble
 		opacity: 0
@@ -46,6 +48,6 @@ section.mentoring
 		transform: scale(0)
 		transform-origin: bottom left
 
-	.face:hover .bubble
+	.face.has-bubble-open .bubble
 		opacity: 1
 		transform: scale(1)
