@@ -41,8 +41,11 @@ function startMentoring() {
 
 	if($('section.mentoring').offset().top - 500 < wScroll) {
 		$('.faces').addClass('launched');
-		setTimeout(function() {
-			$('.face:nth-child(3)').addClass('has-bubble-open');
-		}, 400);
+
+		if(!$('.face').hasClass('has-bubble-open') {
+			setTimeout(function() {
+				$('.face:nth-child(3)').addClass('has-bubble-open');
+			}, 400);
+		}
 	}
 };

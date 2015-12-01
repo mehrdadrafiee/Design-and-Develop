@@ -816,10 +816,12 @@ section.mentoring {
     margin-left: 10px; } }
 
 .home-lead {
-  font-size: 36px;
-  line-height: 1.1; }
+  line-height: 1.1;
+  font-size: 36px; }
   .home-lead.outdented {
-    text-indent: -0.75em; }
+    text-indent: -0.8em; }
     @media (max-width: 640px) {
       .home-lead.outdented {
-        text-indent: 0; } }
+        text-indent: 0; }
+        .home-lead.outdented .home-lead {
+          text-align: center; } }
