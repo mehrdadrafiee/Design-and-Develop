@@ -16,7 +16,11 @@ function mentoringBubbleClick() {
 		if($(window).width() > 640) {
 			$this.parent().css('top', + vertMath +'px');
 		} else {
-			$this.parent().css('left', + horizMath +'px');
+			if(&this.hasClass('back-btn')) {
+				mentoringNarrowStart();
+			} else {
+				$this.parent().css('left', + horizMath +'px');
+			}
 		}
 		$this.addClass('has-bubble-open')
 			.siblings().removeClass('has-bubble-open');
@@ -45,14 +49,17 @@ function startMentoring() {
 	var wScroll = $(window).scrollTop();
 
 	if($('section.mentoring').offset().top - 500 < wScroll && $(window).width() > 640) {
+		if($(window).width() > 640) {
 		$('.faces').addClass('launched');
-
 		if(!$('.face').hasClass('has-bubble-open')) {
 			setTimeout(function() {
 				$('.face:nth-child(3)').addClass('has-bubble-open');
 			}, 400);
 		}
+	} else {
+		mentoringNarrowStart();
 	}
+}
 };
 
 
@@ -63,7 +70,6 @@ function mentoringNarrowStart() {
 	});
 	$('.face').first().addClass('has-bubble-open')
 		.siblings().removeClass('has-bubble-open');
-
 }
 
 function mentoringWideStart() {
@@ -73,7 +79,6 @@ function mentoringWideStart() {
 	});
 	$('.face:nth-child(3)').addClass('has-bubble-open')
 		.siblings().removeClass('has-bubble-open');
-
 }
 
 $(window).resize(function() {
