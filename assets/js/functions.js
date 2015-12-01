@@ -16,14 +16,16 @@ function mentoringBubbleClick() {
 		if($(window).width() > 640) {
 			$this.parent().css('top', + vertMath +'px');
 		} else {
-			if(&this.hasClass('back-btn')) {
+			if($this.hasClass('back-btn')) {
 				mentoringNarrowStart();
 			} else {
 				$this.parent().css('left', + horizMath +'px');
 			}
 		}
+		if(!$this.hasClass('back-btn')) {
 		$this.addClass('has-bubble-open')
 			.siblings().removeClass('has-bubble-open');
+			}
 	});
 
 	// when I click a face
@@ -51,7 +53,7 @@ function startMentoring() {
 	if($('section.mentoring').offset().top - 500 < wScroll && $(window).width() > 640) {
 		if($(window).width() > 640) {
 		$('.faces').addClass('launched');
-		if(!$('.face').hasClass('has-bubble-open')) {
+		if(!$('.face').hasClass('has-bubble-open') && !$this.hasClass('back-btn')) {
 			setTimeout(function() {
 				$('.face:nth-child(3)').addClass('has-bubble-open');
 			}, 400);
