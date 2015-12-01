@@ -60,7 +60,18 @@ function mentoringNarrowStart() {
 	$('.faces').css({
 		'top': '230px',
 		'left': '0px'
-	}).first().addClass('has-bubble-open')
+	});
+	$('.face').first().addClass('has-bubble-open')
+		.siblings().removeClass('has-bubble-open');
+
+}
+
+function mentoringWideStart() {
+	$('.faces').css({
+		'top': '230px',
+		'left': '0px'
+	});
+	$('.face:nth-child(3)').addClass('has-bubble-open')
 		.siblings().removeClass('has-bubble-open');
 
 }
