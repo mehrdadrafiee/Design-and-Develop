@@ -756,7 +756,8 @@ section.mentoring {
   section.mentoring .faces {
     margin: 0;
     width: 690px;
-    top: 230px; }
+    top: 230px;
+    left: 0px; }
   section.mentoring .face {
     display: inline-block;
     margin-right: 35px; }

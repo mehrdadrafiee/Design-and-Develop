@@ -15,12 +15,11 @@ function mentoringBubbleClick() {
 
 		if($(window).width() > 640) {
 			$this.parent().css('top', + vertMath +'px');
-			$this.addClass('has-bubble-open');
-				.siblings().removeClass('has-bubble-open');
 		} else {
-			$this.parent().css('left', + horizMath +'px')
-				$this.addClass('has-bubble-open')
+			$this.parent().css('left', + horizMath +'px');
 		}
+		$this.addClass('has-bubble-open')
+			.siblings().removeClass('has-bubble-open');
 	});
 
 	// when I click a face
@@ -45,7 +44,7 @@ function youtubeVidScroll() {
 function startMentoring() {
 	var wScroll = $(window).scrollTop();
 
-	if($('section.mentoring').offset().top - 500 < wScroll && $(window).width() > 640)) {
+	if($('section.mentoring').offset().top - 500 < wScroll && $(window).width() > 640) {
 		$('.faces').addClass('launched');
 
 		if(!$('.face').hasClass('has-bubble-open')) {
@@ -55,3 +54,21 @@ function startMentoring() {
 		}
 	}
 };
+
+
+function mentoringNarrowStart() {
+	$('.faces').css({
+		'top': '230px',
+		'left': '0px'
+	}).first().addClass('has-bubble-open')
+		.siblings().removeClass('has-bubble-open');
+
+}
+
+$(window).resize(function() {
+	if($(window).width() > 640) {
+		mentoringWideStart();
+	} else {
+		mentoringNarrowStart();
+	}
+});
