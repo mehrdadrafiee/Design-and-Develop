@@ -14,12 +14,12 @@ function mentoringBubbleClick() {
 		console.log(vertMath);
 
 		if($(window).width() > 640) {
-		$this.parent().css('top', + vertMath + 'px')
-
-		$this.addClass('has-bubble-open')
-			.siblings().removeClass('has-bubble-open');
+			$this.parent().css('top', + vertMath +'px');
+			$this.addClass('has-bubble-open');
+				.siblings().removeClass('has-bubble-open');
 		} else {
-
+			$this.parent().css('left', + horizMath +'px')
+				$this.addClass('has-bubble-open')
 		}
 	});
 
@@ -45,7 +45,7 @@ function youtubeVidScroll() {
 function startMentoring() {
 	var wScroll = $(window).scrollTop();
 
-	if($('section.mentoring').offset().top - 500 < wScroll) {
+	if($('section.mentoring').offset().top - 500 < wScroll && $(window).width() > 640)) {
 		$('.faces').addClass('launched');
 
 		if(!$('.face').hasClass('has-bubble-open')) {
