@@ -42,7 +42,7 @@ function startMentoring() {
 	if($('section.mentoring').offset().top - 500 < wScroll) {
 		$('.faces').addClass('launched');
 
-		if(!$('.face').hasClass('has-bubble-open') {
+		if(!$('.face').hasClass('has-bubble-open')) {
 			setTimeout(function() {
 				$('.face:nth-child(3)').addClass('has-bubble-open');
 			}, 400);

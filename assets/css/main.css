@@ -821,7 +821,7 @@ section.mentoring {
   .home-lead.outdented {
     text-indent: -0.8em; }
     @media (max-width: 640px) {
-      .home-lead.outdented {
-        text-indent: 0; }
-        .home-lead.outdented .home-lead {
-          text-align: center; } }
+      .home-lead.outdented .home-lead {
+        text-align: center; }
+        .home-lead.outdented .home-lead.outdented {
+          text-indent: 0; } }
