@@ -7,14 +7,20 @@ function mentoringBubbleClick() {
 		console.log("face clicked!");
 		var $this = $(this),
 				faceTop = $this.position().top,
-				vertMath = -1 * (faceTop - 230);
+				vertMath = -1 * (faceTop - 230),
+				faceLeft = $this.position().left,
+				horizMath = 0 - faceLeft;
 
 		console.log(vertMath);
 
+		if($(window).width() > 640) {
 		$this.parent().css('top', + vertMath + 'px')
 
 		$this.addClass('has-bubble-open')
 			.siblings().removeClass('has-bubble-open');
+		} else {
+
+		}
 	});
 
 	// when I click a face
