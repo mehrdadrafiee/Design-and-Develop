@@ -4,10 +4,10 @@ section.articles
 		.col-50
 			.article-wrap
 				{% for post in site.posts limit: 12 %}
-				a(href="{{post.url}}" style="background-image: url(http://fillmurray.com/230/500)").article-thumb
+				a(href="{{post.url}}" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}}").article-thumb
 					.article-meta
-						.name Article Name
-						.date Dec 10, 2014
+						.name {{post.title}}
+						.date {{post.date | date: "%b, %d, %Y"}}
 				{% endfor %}
 				
 
@@ -15,5 +15,5 @@ section.articles
 		.col-50.flex.flex--center.order-first
 			.col-1
 				.desc-wrap
-					p.home-lead.outdented ...Writing and designing articles...
+					p.home-lead.outdented ...Taking and editing photos...
 					a(href="#").home-cta See All Articles
