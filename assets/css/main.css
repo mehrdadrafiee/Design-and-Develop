@@ -726,7 +726,7 @@ section.mentoring {
     cursor: pointer; }
     section.mentoring .face.back-btn {
       background-color: rgba(255, 255, 255, 0.5);
-      display: none; }
+      background-display: none; }
   section.mentoring .bubble {
     opacity: 0;
     position: absolute;
