@@ -90,3 +90,14 @@ $(window).resize(function() {
 		mentoringNarrowStart();
 	}
 });
+
+// instafeed function starts here
+var feed = new Instafeed({
+	get: 'user',
+	userId: 'd84c317c8ec44534b1433aefb7f9f06a',
+	accessToken: 'XXXX',
+	sortBy: 'random',
+	resolution: 'standard_resolution',
+	template: '<li><img src="{{url}}" alt=""/></li>'
+});
+feed.run();

@@ -5,9 +5,9 @@ section.articles
 			.article-wrap
 				{% for post in site.posts limit: 12 %}
 				a(href="{{post.url}}" style="background-image: url(http://fillmurray.com/230/500)").article-thumb
-						.article-meta
-							.name Article Name
-							.date Dec 10, 2014
+				.article-meta
+					.name Article Name
+					.date Dec 10, 2014
 				{% endfor %}
 				
 
