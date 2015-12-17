@@ -1,6 +1,14 @@
 $(function() {
 	mentoringBubbleClick();
+	setInterval(function(){articleTada()}, 4000);
 });
+
+function articleTada() {
+	var randNum = Math.floor(Math.random() * $('.article-thumb').length + 1)
+
+	$('.article-thumb').eq(randNum).addClass('is-emph')
+		.siblings().removeClass('is-emph');
+}
 
 function mentoringBubbleClick() {
 	$('.face').on('click', function() {
@@ -39,6 +47,7 @@ function mentoringBubbleClick() {
 $(window).scroll(function () {
 	youtubeVidScroll();
 	startMentoring();
+	startArticles();
 });
 
 function youtubeVidScroll() {
@@ -47,10 +56,22 @@ function youtubeVidScroll() {
 	$('.video-strip').css('background-position', 'center -' + wScroll + '0px');
 }
 
+function startArticles() {
+	var wScroll = $(window).scrollTop();
+
+	if($('section.articles').offset().top - $(window).height()/1.2 < wScroll) {
+		$('.article-thumb').each(function(i) {
+			setTimeout(function() {
+				$('.article-thumb').eq(i).addClass('is-visible');
+		}, 100 * i);
+		});
+	}
+}
+
 function startMentoring() {
 	var wScroll = $(window).scrollTop();
 
-	if($('section.mentoring').offset().top - 500 < wScroll && $(window).width() > 640) {
+	if($('section.mentoring').offset().top - $(window).height()/2 < wScroll) {
 		if($(window).width() > 640) {
 		$('.faces').addClass('launched');
 		if(!$('.face').hasClass('has-bubble-open') && !$this.hasClass('back-btn')) {
@@ -90,14 +111,3 @@ $(window).resize(function() {
 		mentoringNarrowStart();
 	}
 });
-
-// instafeed function starts here
-var feed = new Instafeed({
-	get: 'user',
-	userId: 'd84c317c8ec44534b1433aefb7f9f06a',
-	accessToken: 'XXXX',
-	sortBy: 'random',
-	resolution: 'standard_resolution',
-	template: '<li><img src="{{url}}" alt=""/></li>'
-});
-feed.run();
