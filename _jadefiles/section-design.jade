@@ -1,14 +1,14 @@
-mixin design-img(link)
-	a(href="#{link}").design-img-link
+mixin design-img(link, color)
+	a(href="#{link}" data-color="#{color}").design-img-link
 		img(src="http://placehold.it/200x150")
 
 
 section.design
 	.flex.flex--center
-		.col-50.flex.flex--center.dribbble
+		.col-50.flex.flex--center.dribbble(data-orig-color="#ea4c89")
 			.col-1
 				p.home-lead ...Updating on Dribbble...
-				+design-img('http://placehold.it/200x150')
+				+design-img('http://placehold.it/200x150', 'orange')
 				+design-img('http://placehold.it/200x150')
 				+design-img('http://placehold.it/200x150')
 				+design-img('http://placehold.it/200x150')

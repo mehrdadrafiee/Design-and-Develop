@@ -909,7 +909,9 @@ section.design {
     font-size: 25px; }
   section.design .dribbble, section.design .codepen {
     background-color: #ea4c89;
-    padding: 50px 0; }
+    padding: 50px 0;
+    -webkit-transition: background-color 150ms ease-in-out;
+            transition: background-color 150ms ease-in-out; }
     section.design .dribbble.codepen, section.design .codepen.codepen {
       background-color: black; }
       section.design .dribbble.codepen .home-cta, section.design .codepen.codepen .home-cta {
@@ -923,7 +925,13 @@ section.design {
     width: calc(50% - 14px);
     border: 2px solid white;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-    margin: 5px; }
+    margin: 5px;
+    -webkit-transition: -webkit-transform 150ms ease-in-out;
+            transition: transform 150ms ease-in-out; }
+    section.design .design-img-link:hover {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
     section.design .design-img-link img {
       width: 100%;
       display: block; }
