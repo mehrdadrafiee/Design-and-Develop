@@ -899,8 +899,37 @@ section.vine {
     section.vine .description {
       margin-top: 50px; } }
 
+.home-sections .design {
+  padding: 0; }
+
 section.design {
-  background-color: pink; }
+  color: white; }
+  section.design .home-lead {
+    text-align: center;
+    font-size: 25px; }
+  section.design .dribbble, section.design .codepen {
+    background-color: #ea4c89;
+    padding: 50px 0; }
+    section.design .dribbble.codepen, section.design .codepen.codepen {
+      background-color: black; }
+      section.design .dribbble.codepen .home-cta, section.design .codepen.codepen .home-cta {
+        color: black; }
+  section.design .home-cta {
+    font-size: 25px;
+    color: #ea4c89; }
+  section.design .design-img-link {
+    display: block;
+    float: left;
+    width: calc(50% - 14px);
+    border: 2px solid white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 5px; }
+    section.design .design-img-link img {
+      width: 100%;
+      display: block; }
+  section.design .cf {
+    clear: both;
+    margin-bottom: 20px; }
 
 .home-wrap {
   display: -webkit-box;

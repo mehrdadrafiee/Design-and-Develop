@@ -1,11 +1,30 @@
+mixin design-img(link)
+	a(href="#{link}").design-img-link
+		img(src="http://placehold.it/200x150")
+
+
 section.design
 	.flex.flex--center
-		.col-50.flex.flex--center
+		.col-50.flex.flex--center.dribbble
 			.col-1
-				p.home-lead ...Designing on Codepen...
-				a(href="#").home-cta See more on Codepen
-
-		.col-50.flex.flex--center
-			.col-1
-				p.home-lead ...and on Dribbble...
+				p.home-lead ...Updating on Dribbble...
+				+design-img('http://placehold.it/200x150')
+				+design-img('http://placehold.it/200x150')
+				+design-img('http://placehold.it/200x150')
+				+design-img('http://placehold.it/200x150')
+				+design-img('http://placehold.it/200x150')
+				+design-img('http://placehold.it/200x150')
+				.cf
 				a(href="#").home-cta See more on Dribbble
+
+		.col-50.flex.flex--center.codepen
+			.col-1
+				p.home-lead ...and Codepen...
+				+design-img('http://placehold.it/200x150')
+				+design-img('http://placehold.it/200x150')
+				+design-img('http://placehold.it/200x150')
+				+design-img('http://placehold.it/200x150')
+				+design-img('http://placehold.it/200x150')
+				+design-img('http://placehold.it/200x150')
+				.cf
+				a(href="#").home-cta See more on Codepen
