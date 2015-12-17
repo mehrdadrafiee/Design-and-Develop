@@ -6,8 +6,8 @@ $(function() {
 function articleTada() {
 	var randNum = Math.floor(Math.random() * $('.article-thumb').length + 1)
 
-	$('.article-thumb').eq(randNum).addClass('is-emph')
-		.siblings().removeClass('is-emph');
+	$('.article-thumb').eq(randNum).addClass('is-emph').css('z-index', '1')
+		.siblings().removeClass('is-emph').css('z-index', '0');
 }
 
 function mentoringBubbleClick() {
@@ -59,7 +59,7 @@ function youtubeVidScroll() {
 function startArticles() {
 	var wScroll = $(window).scrollTop();
 
-	if($('section.articles').offset().top - $(window).height()/1.2 < wScroll) {
+	if($('section.articles').offset().top - $(window).height()/2 < wScroll) {
 		$('.article-thumb').each(function(i) {
 			setTimeout(function() {
 				$('.article-thumb').eq(i).addClass('is-visible');
@@ -74,7 +74,7 @@ function startMentoring() {
 	if($('section.mentoring').offset().top - $(window).height()/2 < wScroll) {
 		if($(window).width() > 640) {
 		$('.faces').addClass('launched');
-		if(!$('.face').hasClass('has-bubble-open') && !$this.hasClass('back-btn')) {
+		if(!$('.face').hasClass('has-bubble-open')) {
 			setTimeout(function() {
 				$('.face:nth-child(3)').addClass('has-bubble-open');
 			}, 400);

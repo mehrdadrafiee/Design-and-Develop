@@ -807,8 +807,7 @@ section.articles {
               animation-name: tada;
       -webkit-animation-duration: 1s;
               animation-duration: 1s;
-        animation-duration-animation-fill-mode: both;
-        animation-duration-z-index: 1; }
+        animation-duration-animation-fill-mode: both; }
     section.articles .article-thumb:after {
       content: '';
       display: block;
@@ -838,13 +837,14 @@ section.articles {
             transform: translate(0%, 0%) scale(1); }
   @media (max-width: 640px) {
     section.articles .desc-wrap {
-      margin-top: 100px; } }
+      margin-top: 100px;
+      width: 100%; } }
   @media (max-width: 999px) and (min-width: 640px) {
     section.articles .article-thumb {
-      width: 33.3%; } }
+      width: 33.33%; } }
 
 @-webkit-keyframes tada {
-  from {
+  0% {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1); }
   10%, 20% {
@@ -856,12 +856,12 @@ section.articles {
   40%, 60%, 80% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
             transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
-  to {
+  100% {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1); } }
 
 @keyframes tada {
-  from {
+  0% {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1); }
   10%, 20% {
@@ -873,9 +873,34 @@ section.articles {
   40%, 60%, 80% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
             transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
-  to {
+  100% {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1); } }
+
+section.vine {
+  background-color: #2E8B57;
+  color: white; }
+  section.vine iframe {
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3); }
+  section.vine .home-cta {
+    color: #2E8B57; }
+  section.vine .description {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  @media (max-width: 640px) {
+    section.vine .col1 {
+      text-align: center; }
+    section.vine .description {
+      margin-top: 50px; } }
+
+section.design {
+  background-color: pink; }
 
 .home-wrap {
   display: -webkit-box;
