@@ -939,6 +939,26 @@ section.design {
     clear: both;
     margin-bottom: 20px; }
 
+section.notes {
+  background-color: #7B68EE;
+  color: white; }
+  section.notes .col-1 {
+    padding-left: 30px;
+    font-size: 18px;
+    line-height: 1.8; }
+    section.notes .col-1:first-child {
+      padding-left: 0;
+      padding-right: 30px;
+      text-align: right;
+      border-right: solid 2px white; }
+  section.notes a {
+    color: white;
+    text-decoration: underline; }
+  section.notes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+
 .home-wrap {
   display: -webkit-box;
   display: -webkit-flex;
