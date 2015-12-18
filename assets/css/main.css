@@ -1017,7 +1017,8 @@ section.podcast {
   -webkit-transition: background 100ms ease-in-out;
           transition: background 100ms ease-in-out; }
   .home-footer a:hover {
-    background: gainsboro; }
+    background: gainsboro;
+    text-decoration: underline; }
 
 .home-wrap {
   display: -webkit-box;
