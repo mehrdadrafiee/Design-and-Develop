@@ -55,7 +55,7 @@ function mentoringBubbleClick() {
 
 $(window).scroll(function () {
 	youtubeVidScroll();
-	startMentoring();
+	// startMentoring();
 	startArticles();
 });
 
@@ -115,8 +115,8 @@ function mentoringWideStart() {
 
 $(window).resize(function() {
 	if($(window).width() > 640) {
-		mentoringWideStart();
+		// mentoringWideStart();
 	} else {
-		mentoringNarrowStart();
+		// mentoringNarrowStart();
 	}
 });

@@ -1,75 +1,78 @@
 .home-wrap
-	display: flex
-	min-height: 100vh
+  display: flex
+  min-height: 100vh
 
-	@media (max-width: 775px)
-		display: block
+  @media (max-width: 775px)
+    display: block
 
 .home-sections
-	flex: 1
-	border-left: 1px solid rgba(0, 0, 0, 0.4)
+  flex: 1
 
-	section
-		padding: 50px 0
-
-
-	//Flex classes
-	.flex
-		display: flex
-		flex-direction: rows
-
-	.flex--center
-		justify-content: center
-
-	.flex--space-around
-		justify-content: space-around
-
-	.order-first
-		order: -1
+  section
+    padding: 50px 0
 
 
-	//columns
-	.col-1
-		max-width: 300px
-		margin: 0 10px
 
-	.col-2
-		max-width: 620px
-		margin: 0 10px
+  // Flex Classes
+  .flex
+    display: flex
 
-	.col-50
-		width: 50%
+  .flex--center
+    justify-content: center
 
-	.push-right
-		margin-left: 330px
+  .flex--space-around
+    justify-content: space-around
+
+  .order-first
+    order: -1
+
+
+
+// columns
+.col-1
+  width: 320px
+  padding: 0 10px
+  box-sizing: border-box
+
+.push-right
+  margin-left: 330px
+
+.col-2
+  max-width: 640px
+  padding: 0 10px
+  box-sizing: border-box
+  width: 100%
+
+.col-50
+  width: 50%
+
 
 @media (max-width: 640px)
-	.home-sections .flex
-		display: block
+  .home-sections .flex
+    display: block
 
-	.col-1
-		max-width: 100%
+  .col-1
+    width: 100%
 
-	.col-50
-		width: auto
+  .col-50
+    width: auto
 
-	.push-right
-		margin-left: 10px
+  .push-right
+    margin-left: 0
 
 
 
-// Typography
-
+// typography
 .home-lead
-	line-height: 1.1
-	font-size: 36px
+  line-height: 1.1
+  font-size: 36px
 
-	&.outdented
-		text-indent: -0.8em
+  &.outdented
+    text-indent: -0.8em
 
-		@media (max-width: 640px)
-			.home-lead
-				text-align: center
+@media (max-width: 640px)
+  .home-lead
+    text-align: center
 
-				&.outdented
-					text-indent: 0
+    &.outdented
+      text-indent: 0

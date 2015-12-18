@@ -4,10 +4,10 @@ section.articles
 		.col-50
 			.article-wrap
 				{% for post in site.posts limit: 12 %}
-				a(href="{{post.url}}" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}}").article-thumb
+				a(href="#" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}}").article-thumb
 					.article-meta
-						.name {{post.title}}
-						.date {{post.date | date: "%b, %d, %Y"}}
+						//- .name {{post.title}}
+						//- .date {{post.date | date: "%b, %d, %Y"}}
 				{% endfor %}
 				
 
@@ -15,5 +15,5 @@ section.articles
 		.col-50.flex.flex--center.order-first
 			.col-1
 				.desc-wrap
-					p.home-lead.outdented ...Taking photos & editing them...
-					a(href="#").home-cta See All Images
+					p.home-lead I also take photos of subjects that capture my attention.
+					a(href="https://www.instagram.com/tristan_pix").home-cta See all images

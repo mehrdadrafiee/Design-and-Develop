@@ -4,4 +4,4 @@ title: New years eve is awesome
 thumbnail: post-12.png 
 ---
 
-# Goodbye curel world!
+# This page is under development!
