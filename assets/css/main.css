@@ -501,7 +501,7 @@ body {
     text-indent: 101%;
     white-space: nowrap;
     max-width: 135px;
-    background-image: url(/assets/img/logo-mr.png);
+    background-image: url(../../assets/img/logo-mr.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
