@@ -512,7 +512,8 @@ body {
     list-style: none;
     margin: 20px 0;
     padding: 0 20px 0 0;
-    text-align: right; }
+    text-align: right;
+    font-style: italic; }
     .home-wrap header .site-nav ul li {
       margin-bottom: 10px; }
       .home-wrap header .site-nav ul li:hover, .home-wrap header .site-nav ul li:active, .home-wrap header .site-nav ul li:focus, .home-wrap header .site-nav ul li:visited {
