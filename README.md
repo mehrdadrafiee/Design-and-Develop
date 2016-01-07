@@ -1,6 +1,10 @@
 Working Files for ryanrafiee.com
 =============================
 
+## First things first
+
+Special thanks to @travisneilson. Check his YouTube channel called [DevTips](https://www.youtube.com/user/DevTipsForDesigners).
+
 ## System Preparation
 
 To use this starter project, you'll need the following things installed on your machine.
@@ -26,7 +30,7 @@ $ gulp
 
 **jekyll**
 
-As this is just a Jekyll project, you can use any of the commands listed in their [docs](http://jekyllrb.com/docs/usage/)
+As this is just a Jekyll project, you can use any of the commands listed in their [docs](http://jekyllrb.com/docs/usage/).
 
 
 <!--
