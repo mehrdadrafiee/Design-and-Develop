@@ -3,7 +3,7 @@ Working Files for ryanrafiee.com
 
 ## First things first
 
-Special thanks to @travisneilson. Check his YouTube channel called [DevTips](https://www.youtube.com/user/DevTipsForDesigners).
+Special thanks to [@travisneilson](https://twitter.com/travisneilson). Check his YouTube channel called [DevTips](https://www.youtube.com/user/DevTipsForDesigners).
 
 ## System Preparation
 
