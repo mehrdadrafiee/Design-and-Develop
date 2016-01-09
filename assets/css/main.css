@@ -814,9 +814,10 @@ section.articles {
               animation-name: tada;
       -webkit-animation-duration: 1s;
               animation-duration: 1s;
-        animation-duration-animation-fill-mode: both; }
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both; }
     section.articles .article-thumb:after {
-      content: '';
+      content: "";
       display: block;
       padding-top: 100%; }
   section.articles .article-meta {
