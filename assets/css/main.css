@@ -518,7 +518,7 @@ body {
       margin-bottom: 10px; }
       .home-wrap header .site-nav ul li:hover, .home-wrap header .site-nav ul li:active, .home-wrap header .site-nav ul li:focus, .home-wrap header .site-nav ul li:visited {
         font-weight: bold;
-        border-left: 8px solid; }
+        border-left: 8px solid black; }
       .home-wrap header .site-nav ul li:last-child {
         margin-bottom: 0; }
   .home-wrap header .email-link {
@@ -584,7 +584,8 @@ body {
           transition: all 0.3 ease-in-out; }
   .home-wrap .mobile-nav ul {
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
   .home-wrap .mobile-nav li {
     text-align: center;
     margin-bottom: 10px; }
@@ -789,7 +790,8 @@ section.articles {
   section.articles .home-cta {
     color: #FFD700; }
   section.articles .article-wrap {
-    margin: -50px 0; }
+    margin: -50px 0;
+    overflow: hidden; }
     section.articles .article-wrap::after {
       clear: both;
       content: "";
@@ -1007,20 +1009,37 @@ section.podcast {
     color: black;
     background: white; }
 
-.home-footer a {
-  color: #000000;
-  background-color: #F5F5F5;
-  display: block;
-  width: 100%;
-  line-height: 6;
-  text-align: center;
-  font-size: 70px;
-  font-weight: 600;
-  -webkit-transition: background 100ms ease-in-out;
-          transition: background 100ms ease-in-out; }
-  .home-footer a:hover {
-    background: gainsboro;
-    text-decoration: underline; }
+.home-footer {
+  background-color: #b8b8b8; }
+  .home-footer a {
+    color: transparent;
+    background-color: #565656;
+    display: block;
+    width: 100%;
+    line-height: 6;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.45);
+    -webkit-background-clip: text;
+      -webkit-background-clip--moz-background-clip: text;
+        -webkit-background-clip--moz-background-clip-background-clip: text;
+    -webkit-transition: background 100ms ease-in-out;
+            transition: background 100ms ease-in-out; }
+    @media (max-width: 895px) {
+      .home-footer a {
+        font-size: 50px; } }
+    @media (max-width: 650px) {
+      .home-footer a {
+        font-size: 35px; } }
+    @media (max-width: 450px) {
+      .home-footer a {
+        font-size: 20px; } }
+    .home-footer a:hover {
+      text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.3);
+      -webkit-background-clip: text;
+        -webkit-background-clip--moz-background-clip: text;
+          -webkit-background-clip--moz-background-clip-background-clip: text; }
 
 .home-wrap {
   display: -webkit-box;
