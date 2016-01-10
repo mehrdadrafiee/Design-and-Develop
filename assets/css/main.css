@@ -432,13 +432,13 @@ body {
 
 html,
 body {
-  min-height: 100vh; }
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif; }
 
 body {
   background: WHITESMOKE;
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Lato', sans-serif;
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -457,6 +457,9 @@ body {
   font-weight: bold; }
   .home-cta:hover {
     box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.8); }
+
+.home-lead {
+  font-weight: 400; }
 
 .flex-video {
   height: 0;
@@ -514,12 +517,11 @@ body {
     list-style: none;
     margin: 20px 0;
     padding: 0 20px 0 0;
-    text-align: right;
-    font-style: italic; }
+    text-align: right; }
     .home-wrap header .site-nav ul li {
       margin-bottom: 10px; }
       .home-wrap header .site-nav ul li:hover, .home-wrap header .site-nav ul li:active, .home-wrap header .site-nav ul li:focus, .home-wrap header .site-nav ul li:visited {
-        font-weight: bold;
+        font-weight: 700;
         border-left: 8px solid black; }
       .home-wrap header .site-nav ul li:last-child {
         margin-bottom: 0; }
@@ -531,7 +533,6 @@ body {
     display: none;
     width: 50px;
     height: 50px;
-    background: pink;
     margin-right: 20px;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -629,12 +630,15 @@ section.about {
   section.about h2 {
     color: white;
     font-size: 60px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1;
     margin-left: -108px;
     margin-top: 0; }
   section.about .big {
-    color: rgba(255, 255, 255, 0.4); }
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400; }
+  section.about p {
+    font-weight: 300; }
   section.about .home-lead {
     padding-bottom: 180px; }
 
@@ -877,8 +881,6 @@ section.articles {
 section.vine {
   background-color: #2E8B57;
   color: white; }
-  section.vine iframe {
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3); }
   section.vine .twitterBtn {
     width: 100%; }
   section.vine .home-cta {
